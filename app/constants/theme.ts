@@ -18,6 +18,8 @@ const COLORS = {
     white: '#ffffff',
     lightBlack: '#75758C',
     black: '#253536',
+    black2: "#3A3F46",
+    lightPurpil: '#FFA4C1'
 };
 
 const SIZES = {

@@ -9,6 +9,8 @@ import {
   TextInput,
   Image,
   ImageBackground,
+  Animated,
+  FlatList
 } from 'react-native';
 
 const RN = {
@@ -22,6 +24,8 @@ const RN = {
   TextInput,
   Image,
   ImageBackground,
+  Animated,
+  FlatList
 };
 
 export default RN;
