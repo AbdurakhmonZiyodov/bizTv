@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // Screens
-import { BizTvScreen, HomeScreen, ChildTvScreen } from './app/screens';
+import { BizTvScreen, HomeScreen, ChildTvScreen, } from './app/screens';
 
 // App Stack Navigator
 const AppStack = createNativeStackNavigator();

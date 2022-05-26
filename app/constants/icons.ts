@@ -4,6 +4,10 @@ const news = require('../assets/icons/tabbar/news.png')
 const radio = require('../assets/icons/tabbar/radio.png')
 const tv = require('../assets/icons/tabbar/tv.png')
 const vedio = require('../assets/icons/tabbar/vedio.png')
+const arrowLeft = require('../assets/icons/arrow-left.png')
+const like = require('../assets/icons/bizFm/like.png')
+const play = require('../assets/icons/bizFm/play.png')
+const share = require('../assets/icons/bizFm/share.png')
 
 const icons = {
     tabbar: {
@@ -12,6 +16,12 @@ const icons = {
         radio,
         tv,
         vedio
+    },
+    arrowLeft,
+    bizFm: {
+        like,
+        play,
+        share
     }
 }
 
