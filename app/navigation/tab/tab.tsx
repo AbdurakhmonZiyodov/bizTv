@@ -6,26 +6,19 @@ import { RN } from '../../components/react-native';
 import { icons, COLORS, FONTS } from '../../constants/';
 
 // Screens
-import { TVScreen, BizFmScreen, NewsScreen2 } from '../../screens/';
+import { TVScreen, BizFmScreen, NewsScreen2, ProgroomsScreen, DotsScreen } from '../../screens/';
 
 const Tab = createBottomTabNavigator();
 
 
 function Vedios() {
   return (
-    <RN.View>
-      <RN.Text>Vedios Screen</RN.Text>
+    <RN.View style={{ flex: 1, backgroundColor: COLORS.white }}>
+      <ProgroomsScreen marginBottom={true} />
     </RN.View>
   );
 }
 
-function Dots() {
-  return (
-    <RN.View>
-      <RN.Text>Dots Screen</RN.Text>
-    </RN.View>
-  );
-}
 
 const TabNavigation = () => {
   return (
@@ -115,7 +108,7 @@ const TabNavigation = () => {
       />
       <Tab.Screen
         name="dots"
-        component={Dots}
+        component={DotsScreen}
         options={{ tabBarLabel: 'Boshqa' }}
       />
     </Tab.Navigator>

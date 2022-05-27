@@ -8,6 +8,7 @@ import { COLORS, SIZES, images, FONTS } from '../../constants'
 
 // Style
 import { bizTvStyles } from "./styles";
+import Ethers from "../../components/common/Ethers";
 
 
 // Types
@@ -27,6 +28,7 @@ const View = () => {
     const navigation: any = useNavigation()
     const [clickedBtn, setClickedBtn] = React.useState('480')
     const [clickedEther, setClickedEther] = React.useState('Retro Film');
+
     const ethers = [
         {
             id: 0,
@@ -266,7 +268,7 @@ const View = () => {
 
             {renderBtns(['480', '720', '1080'])}
 
-            {renderEthers(ethers)}
+            <Ethers defaultEther="Start Up Club" title="Hozirda Efirda" ethers={ethers} />
         </RN.View>
     )
 }

@@ -23,6 +23,7 @@ const n2Item3 = require('../assets/images/news2/item3.png')
 const n2Item4 = require('../assets/images/news2/item4.png')
 
 
+
 const images = {
     bg,
     vedioPub,
