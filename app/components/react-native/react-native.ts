@@ -10,8 +10,12 @@ import {
   Image,
   ImageBackground,
   Animated,
-  FlatList
+  FlatList,
+  ScrollView,
+  Pressable
 } from 'react-native';
+
+
 
 const RN = {
   View,
@@ -25,7 +29,9 @@ const RN = {
   Image,
   ImageBackground,
   Animated,
-  FlatList
+  FlatList,
+  ScrollView,
+  Pressable,
 };
 
 export default RN;

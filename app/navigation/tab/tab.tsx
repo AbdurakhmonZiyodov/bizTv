@@ -6,25 +6,10 @@ import { RN } from '../../components/react-native';
 import { icons, COLORS, FONTS } from '../../constants/';
 
 // Screens
-import { TVScreen } from '../../screens/';
+import { TVScreen, BizFmScreen, NewsScreen2 } from '../../screens/';
 
 const Tab = createBottomTabNavigator();
 
-function Radio() {
-  return (
-    <RN.View>
-      <RN.Text>Radio Screen</RN.Text>
-    </RN.View>
-  );
-}
-
-function News() {
-  return (
-    <RN.View>
-      <RN.Text>News Screen</RN.Text>
-    </RN.View>
-  );
-}
 
 function Vedios() {
   return (
@@ -115,12 +100,12 @@ const TabNavigation = () => {
       />
       <Tab.Screen
         name="radio"
-        component={Radio}
+        component={BizFmScreen}
         options={{ tabBarLabel: 'Biz fm' }}
       />
       <Tab.Screen
         name="news"
-        component={News}
+        component={NewsScreen2}
         options={{ tabBarLabel: 'Yangiliklar' }}
       />
       <Tab.Screen
