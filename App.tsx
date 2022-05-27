@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // Screens
-import { BizTvScreen, HomeScreen, ChildTvScreen, BizItemScreen, } from './app/screens';
+import { BizTvScreen, HomeScreen, ChildTvScreen, BizItemScreen, News2Item, TvShowsScreen, AboutProjectScreen } from './app/screens';
 
 // App Stack Navigator
 const AppStack = createNativeStackNavigator();
@@ -20,6 +20,11 @@ const App = () => (
       <AppStack.Screen name="BizTvScreen" component={BizTvScreen} />
       <AppStack.Screen name='ChildTvScreen' component={ChildTvScreen} />
       <AppStack.Screen name='BizItemScreen' component={BizItemScreen} />
+      <AppStack.Screen name='News2ItemScreen' component={News2Item} />
+      <AppStack.Screen name='TvShowsScreen' component={TvShowsScreen} />
+      <AppStack.Screen name='AboutProjectScreen' component={AboutProjectScreen} />
+
+
     </AppStack.Navigator>
   </NavigationContainer>
 );

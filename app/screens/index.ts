@@ -1,7 +1,12 @@
 export { default as HomeScreen } from './Home';
+export { default as ProgroomsScreen } from '../components/common/Progrooms'
 export { BizTvScreen } from './BizTv'
 export { TVScreen } from './Tv'
 export { ChildTvScreen } from './Tv2'
 export { BizFmScreen } from './BizFm'
 export { BizItemScreen } from './BizITem'
 export { NewsScreen2 } from './News2'
+export { News2Item } from './News2Item'
+export { DotsScreen } from './Dots'
+export { TvShowsScreen } from './TvShows'
+export { AboutProjectScreen } from './AboutProject'

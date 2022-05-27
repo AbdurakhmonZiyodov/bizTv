@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { RN } from "../../components/react-native";
 import { COLORS, FONTS, images, SIZES } from "../../constants";
 
@@ -6,11 +6,11 @@ import { COLORS, FONTS, images, SIZES } from "../../constants";
 import Checkbox from "../../components/common/Checkbox";
 import { news2Styles } from "./styles";
 import { ListRenderItemInfo } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 
 
 // Types
-// CheckboxBtnType
 interface CheckboxBtnType {
     title: string;
     color: string;
@@ -72,6 +72,7 @@ const TvTitle = ({ title }: { title: string }) => (
 )
 
 const View = () => {
+    const navigation: any = useNavigation();
 
     const checkboxs: checkboxItemType[] = [
         {
@@ -188,7 +189,10 @@ const View = () => {
     function renderNewsList(news: newsType) {
 
         const renderNewsItem = ({ item: { img, timeStamp, title, tvTitle } }: ListRenderItemInfo<newsItemType>) => (
-            <RN.View style={{ marginBottom: SIZES.margin - 2, flexDirection: 'row' }}>
+            <RN.TouchableOpacity
+                style={{ marginBottom: SIZES.margin - 2, flexDirection: 'row' }}
+                onPress={() => navigation.navigate("News2ItemScreen")}
+            >
                 <RN.View style={{ marginRight: 5 }}>
                     <RN.Image
                         source={img}
@@ -211,7 +215,7 @@ const View = () => {
                         <TimeStamp time={timeStamp} />
                     </RN.View>
                 </RN.View>
-            </RN.View>
+            </RN.TouchableOpacity>
         )
         return (
             <RN.FlatList

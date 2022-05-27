@@ -9,10 +9,10 @@ import { COLORS, FONTS, images, SIZES } from '../../constants';
 import { tvStyles } from './styles';
 
 const View = () => {
+  const navigation: any = useNavigation()
 
   // Render
   function renderChannels() {
-    const navigation: any = useNavigation()
     return (
       <RN.View>
         <RN.View style={tvStyles.item_box}>
