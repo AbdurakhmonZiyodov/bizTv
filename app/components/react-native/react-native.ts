@@ -11,9 +11,11 @@ import {
   ImageBackground,
   Animated,
   FlatList,
+  ScrollView,
+  Pressable
 } from 'react-native';
 
-import CheckBoxComponent from "../common/CheckBox";
+
 
 const RN = {
   View,
@@ -28,7 +30,8 @@ const RN = {
   ImageBackground,
   Animated,
   FlatList,
-  CheckBox: CheckBoxComponent
+  ScrollView,
+  Pressable,
 };
 
 export default RN;

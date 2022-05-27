@@ -21,6 +21,11 @@ const COLORS = {
     lightBlack2: 'rgba(0, 0, 0, 0.5)',
     black: '#253536',
     black2: "#3A3F46",
+    yellow: "#FA6400",
+    lightRed2: " rgba(255, 164, 193, 0.26934)",
+    lightBlue2: " rgba(50, 197, 255, 0.259506)",
+    lightYellow2: " rgba(255, 255, 0, 0.26934)",
+    lightGreen2: " rgba(22, 184, 127, 0.26934)",
 };
 
 const SIZES = {
