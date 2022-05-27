@@ -10,8 +10,10 @@ import {
   Image,
   ImageBackground,
   Animated,
-  FlatList
+  FlatList,
 } from 'react-native';
+
+import CheckBoxComponent from "../common/CheckBox";
 
 const RN = {
   View,
@@ -25,7 +27,8 @@ const RN = {
   Image,
   ImageBackground,
   Animated,
-  FlatList
+  FlatList,
+  CheckBox: CheckBoxComponent
 };
 
 export default RN;

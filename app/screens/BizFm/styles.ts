@@ -12,5 +12,8 @@ export const bizFmStyles = RN.StyleSheet.create({
     programms: { marginVertical: SIZES.base, marginBottom: 40 },
     programmsItem: { height: SIZES.height / 3 - SIZES.base, marginVertical: SIZES.base / 2 },
     programmsItemTitle: { ...FONTS.h1, color: COLORS.white },
-    programmsItemTitleBox: { position: 'absolute', bottom: '12%', left: '9%', width: '70%' }
+    programmsItemTitleBox: { position: 'absolute', bottom: '12%', left: '9%', width: '70%' },
+    newsItem: { marginTop: SIZES.base * 2 },
+    playBtnImage: { width: SIZES.width * 0.9, height: 219, borderRadius: SIZES.base },
+    playBtn: { position: 'absolute', top: '35%', left: '43%' }
 })

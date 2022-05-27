@@ -1,0 +1,1 @@
+export { default as NewsScreen2 } from './view';
